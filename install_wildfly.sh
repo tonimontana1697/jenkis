@@ -47,23 +47,23 @@ export LAUNCH_JBOSS_IN_BACKGROUND=true
 ./wildfly/bin/add-user.sh admin admin --silent
 
 #Extra - Configuraciones por si acaso - la mayor parte del tiempo no se usaran
-sed -i 's/jboss.http.port:8080/jboss.http.port:80/g' wildfly/standalone/configuration/standalone.xml
+sed -i 's/jboss.http.port:8080/jboss.http.port:8080/g' wildfly/standalone/configuration/standalone.xml
 sed -i 's/inet-address value="${jboss.bind.address.management:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone.xml
 sed -i 's/inet-address value="${jboss.bind.address:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone.xml
-sed -i 's/jboss.http.port:8080/jboss.http.port:80/g' wildfly/standalone/configuration/standalone-ha.xml
+sed -i 's/jboss.http.port:8080/jboss.http.port:8080/g' wildfly/standalone/configuration/standalone-ha.xml
 sed -i 's/inet-address value="${jboss.bind.address.management:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-ha.xml
 sed -i 's/inet-address value="${jboss.bind.address.private:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-ha.xml
 sed -i 's/inet-address value="${jboss.bind.address:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-ha.xml
-sed -i 's/jboss.http.port:8080/jboss.http.port:80/g' wildfly/standalone/configuration/standalone-full.xml
+sed -i 's/jboss.http.port:8080/jboss.http.port:8080/g' wildfly/standalone/configuration/standalone-full.xml
 sed -i 's/inet-address value="${jboss.bind.address.management:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-full.xml
 sed -i 's/inet-address value="${jboss.bind.address.unsecure:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-full.xml
 sed -i 's/inet-address value="${jboss.bind.address:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-full.xml
-sed -i 's/jboss.http.port:8080/jboss.http.port:80/g' wildfly/standalone/configuration/standalone-full-ha.xml
+sed -i 's/jboss.http.port:8080/jboss.http.port:8080/g' wildfly/standalone/configuration/standalone-full-ha.xml
 sed -i 's/inet-address value="${jboss.bind.address.management:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-full-ha.xml
 sed -i 's/inet-address value="${jboss.bind.address.private:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-full-ha.xml
 sed -i 's/inet-address value="${jboss.bind.address:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-full-ha.xml
 sed -i 's/inet-address value="${jboss.bind.address.unsecure:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-full-ha.xml
-sed -i 's/jboss.http.port:8080/jboss.http.port:80/g' wildfly/standalone/configuration/standalone-load-balancer.xml
+sed -i 's/jboss.http.port:8080/jboss.http.port:8080/g' wildfly/standalone/configuration/standalone-load-balancer.xml
 sed -i 's/inet-address value="${jboss.bind.address.management:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-load-balancer.xml
 sed -i 's/inet-address value="${jboss.bind.address.private:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-load-balancer.xml
 sed -i 's/inet-address value="${jboss.bind.address:127.0.0.1}"/any-address/g' wildfly/standalone/configuration/standalone-load-balancer.xml
