@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#sudo apt install maven
 #Verion del Servidor Wildfly
 WILDFLY_VERSION=18.0.1.Final
 #Tamaño de memoria a asignar
